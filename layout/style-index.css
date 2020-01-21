@@ -1,0 +1,108 @@
+body {
+  position: relative;
+  background-color: rgb(145, 145, 145);
+}
+
+#navbar {
+  position: fixed;
+  width: 4.5rem;
+  height: 100%;
+  background-color: rgb(35, 39, 39);
+  background-color: rgb(41, 46, 46);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  left: 0px;
+  top: 0px;
+}
+
+header {
+  background-color: rgb(58, 66, 66);
+  background-color: rgb(41, 46, 46);
+  background-color: rgb(126, 136, 136);
+  border-bottom: 1px solid rgb(1, 71, 92);
+}
+
+#header-img {
+  max-width: 62%;
+  height: auto;
+  display: block;
+  margin: 0.35rem auto;
+  padding: 0;
+}
+
+#link-container {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-style: solid;
+  padding: 0;
+  margin: 0;
+}
+
+#main-links {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#social-links {
+  padding: 0;
+  text-align: center;
+}
+
+#social-item {
+  margin: 1rem 0;
+}
+
+.links {
+  list-style: none;
+}
+
+.link-item {
+  text-decoration: none;
+  color: grey;
+  padding: 0 1.35rem;
+}
+
+.link-item:hover {
+  color: rgb(9, 186, 240);
+}
+
+.nav-item {
+  font-size: 1.5rem;
+  margin: 1.7rem 0;
+}
+
+main {
+  position: absolute;
+  margin-left: 10rem;
+}
+
+/* Background workaround to be able to adjust opacity of logo */
+main::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../images/CS-logo2.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 65% 25%;
+  opacity: 0.70;
+  z-index: -1;
+}
+
+#introduction {
+  position: relative;
+  top: 18rem;
+  left: 4rem;
+}
+
+.headers {
+  margin: 0;
+}
