@@ -1,7 +1,13 @@
+/*********************** Body ***********************/
+
 body {
   position: relative;
   background-color: rgb(145, 145, 145);
+  /* background-color: rgb(58, 57, 57); */
+  
 }
+
+/*********************** Navigation ***********************/
 
 #navbar {
   position: fixed;
@@ -21,11 +27,13 @@ header {
   background-color: rgb(58, 66, 66);
   background-color: rgb(41, 46, 46);
   background-color: rgb(126, 136, 136);
+  background-color: rgb(27, 31, 31);
+  background-color: rgb(62, 71, 73);
   /* border-bottom: 1px solid rgb(1, 71, 92); */
 }
 
 #header-img {
-  max-width: 62%;
+  max-width: 65%;
   height: auto;
   display: block;
   margin: 0.35rem auto;
@@ -52,12 +60,18 @@ header {
   text-align: center;
 }
 
-#social-item {
-  margin: 1rem 0;
+.link-groups {
+  list-style: none;
 }
 
-.links {
-  list-style: none;
+.nav-item {
+  font-size: 1.5rem;
+  margin: 1.7rem 0;
+}
+
+.social-item {
+  margin: 1rem 0;
+  font-size: 1.25rem;
 }
 
 .link-item {
@@ -70,10 +84,7 @@ header {
   color: rgb(9, 186, 240);
 }
 
-.nav-item {
-  font-size: 1.5rem;
-  margin: 1.7rem 0;
-}
+/*********************** Main Page ***********************/
 
 main {
   position: absolute;
@@ -130,5 +141,21 @@ main::after {
 .headers {
   margin: 0;
 }
+
+/************* Components (Main Page) *************/
+
+#contact-button {
+  position: relative;
+  top: 2rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background: rgba(37, 54, 70, 0);
+  border: 2px solid rgb(5, 169, 219);
+  border: 2px solid rgb(6, 101, 129);
+  color: rgb(5, 169, 219);
+  color: rgb(6, 101, 129);
+  cursor: pointer;
+}
+
 
 /* adapt for mobile/smaller screens */
