@@ -21,7 +21,7 @@ header {
   background-color: rgb(58, 66, 66);
   background-color: rgb(41, 46, 46);
   background-color: rgb(126, 136, 136);
-  border-bottom: 1px solid rgb(1, 71, 92);
+  /* border-bottom: 1px solid rgb(1, 71, 92); */
 }
 
 #header-img {
@@ -92,16 +92,43 @@ main::after {
   background-repeat: no-repeat;
   background-size: 30%;
   background-position: 65% 25%;
-  opacity: 0.70;
+  opacity: 0.4;
   z-index: -1;
 }
 
 #introduction {
   position: relative;
   top: 18rem;
-  left: 4rem;
+  left: 2rem;
+}
+
+#main-intro {
+  font-family: "Courier Prime";
+  font-family: Inconsolate;
+  font-family: "Krona One";
+  font-family: "Nova Square";
+  font-family: Rationale;
+  font-family: "Roboto Mono";
+  font-family: "Source Code Pro";
+  font-size: 3.5rem;
+  color: rgb(2, 28, 53);
+  /* color: #021c35; */
+  margin-bottom: 0.5rem;
+}
+
+#sub-intro {
+  color: rgba(37, 54, 70, 0.75);
+  /* color: rgba(4, 54, 102, 0.8); */
+  font-family: Revalia;
+  font-family: "Roboto Mono";
+  font-family: "Courier Prime";
+  font-family: "Graduate";
+  font-family: "Krona One";
+  /* font-size: 1.5rem; */
 }
 
 .headers {
   margin: 0;
 }
+
+/* adapt for mobile/smaller screens */
