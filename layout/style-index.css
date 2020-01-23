@@ -1,8 +1,13 @@
-/*********************** Body ***********************/
+/*********************** Body/Global ***********************/
+:root {
+  --main-background: #919191;
+  --main-background: rgb(145, 145, 145);
+  /* --main-background: rgb(134, 134, 134); */
+}
 
 body {
   position: relative;
-  background-color: rgb(145, 145, 145);
+  background-color: var(--main-background);
   /* background-color: rgb(58, 57, 57); */
   
 }
@@ -74,13 +79,50 @@ header {
   font-size: 1.25rem;
 }
 
-.link-item {
+.page-link {
+  position: relative;
   text-decoration: none;
   color: grey;
-  padding: 0 1.35rem;
+  display: block;
 }
 
-.link-item:hover {
+#home-link {
+  transition: ease-in 250ms;
+}
+
+#home-link:hover {
+  color: rgba(9, 186, 240, 1);
+}
+
+#home-link::after {
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  padding-top: 0.35rem;
+  background-color: rgb(41, 46, 46);
+  content: "home";
+  color: rgba(9, 186, 240, 1);
+  opacity: 0;
+  transition: ease-in 250ms;
+}
+
+#home-link:hover::after {
+  opacity: 1;
+}
+
+.social-connect {
+  position: relative;
+  text-decoration: none;
+  color: grey;
+  display: block;
+}
+
+.social-connect:hover {
   color: rgb(9, 186, 240);
 }
 
@@ -122,12 +164,16 @@ main::after {
   font-family: "Roboto Mono";
   font-family: "Source Code Pro";
   font-size: 3.5rem;
+  color: #021c35;
   color: rgb(2, 28, 53);
   /* color: #021c35; */
   margin-bottom: 0.5rem;
 }
 
 #sub-intro {
+  position: relative;
+  top: 0.5rem;
+  left: 0.25rem;
   color: rgba(37, 54, 70, 0.75);
   /* color: rgba(4, 54, 102, 0.8); */
   font-family: Revalia;
@@ -146,15 +192,29 @@ main::after {
 
 #contact-button {
   position: relative;
-  top: 2rem;
-  font-size: 1.5rem;
+  top: 2.5rem;
+  left: 0.4rem;
   padding: 0.5rem;
-  background: rgba(37, 54, 70, 0);
+  font-family: Inconsolata;
+  font-family: "Saira Stencil One";
+  font-size: 1.5rem;
+  font-size: 1.25rem;
+  background: var(--main-background);
   border: 2px solid rgb(5, 169, 219);
   border: 2px solid rgb(6, 101, 129);
+  border: 2px solid #831D01;
+  border: 2px solid #755200;
   color: rgb(5, 169, 219);
   color: rgb(6, 101, 129);
+  color: #831D01;
+  color: #755200;
   cursor: pointer;
+}
+
+#contact-button:hover {
+  background-color: #831D01;
+  background-color: #755200;
+  color: var(--main-background);
 }
 
 
