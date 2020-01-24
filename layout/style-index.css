@@ -1,6 +1,5 @@
 /*********************** Body/Global ***********************/
 :root {
-  --main-background: #919191;
   --main-background: rgb(145, 145, 145);
 }
 
@@ -16,7 +15,6 @@ body {
   position: fixed;
   width: 4.5rem;
   height: 100%;
-  background-color: rgb(35, 39, 39);
   background-color: rgb(41, 46, 46);
   display: flex;
   flex-direction: column;
@@ -27,11 +25,9 @@ body {
 }
 
 header {
-  background-color: rgb(58, 66, 66);
-  /* background-color: rgb(41, 46, 46); */
-  /* background-color: rgb(126, 136, 136); */
-  /* background-color: rgb(27, 31, 31); */
-  background-color: rgb(62, 71, 73);
+  background-color: grey;
+  border-style: solid solid none solid;
+  border-color: rgb(41, 46, 46);
 }
 
 #header-img {
@@ -76,24 +72,23 @@ header {
   font-size: 1.25rem;
 }
 
+/* ~ Main Link Hover Effects */
+
 .page-link {
   position: relative;
   text-decoration: none;
   color: grey;
   display: block;
+  transition: ease-in 200ms;
 }
 
-#home-link {
-  transition: ease-in 185ms;
-}
-
-#home-link:hover {
+.page-link:hover {
   color: rgba(9, 186, 240, 1);
 }
 
-#home-link::after {
+.page-link::after {
   font-family: "Bungee Inline";
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   position: absolute;
   top: 0;
@@ -103,14 +98,30 @@ header {
   height: 2rem;
   padding-top: 0.3rem;
   background-color: rgb(41, 46, 46);
-  content: "home";
   color: rgba(9, 186, 240, 1);
   opacity: 0;
   transition: ease-in 155ms;
 }
 
-#home-link:hover::after {
+.page-link:hover::after {
   opacity: 1;
+}
+
+#home-link::after {
+  content: "home";
+}
+
+#about-link::after {
+  content: "about";
+}
+
+#tech-link::after {
+  content: "Tech";
+}
+
+#portfolio-link::after {
+  content: "portfolio";
+  font-size: 0.7rem;
 }
 
 .social-connect {
@@ -142,8 +153,9 @@ main::after {
   background-image: url(../images/CS-logo2.svg);
   background-repeat: no-repeat;
   background-size: 30%;
-  background-position: 65% 25%;
-  opacity: 0.45;
+  background-position: 75% 25%;
+  /* opacity: 0.45; */
+  opacity: 0.75;
   z-index: -1;
 }
 
@@ -154,17 +166,9 @@ main::after {
 }
 
 #main-intro {
-  font-family: "Courier Prime";
-  font-family: Inconsolate;
-  font-family: "Krona One";
-  font-family: "Nova Square";
-  font-family: Rationale;
-  font-family: "Roboto Mono";
   font-family: "Source Code Pro";
-  font-size: 3.5rem;
-  color: #021c35;
+  font-size: 3.75rem;
   color: rgb(2, 28, 53);
-  /* color: #021c35; */
   margin-bottom: 0.5rem;
 }
 
@@ -173,11 +177,8 @@ main::after {
   top: 0.5rem;
   left: 0.25rem;
   color: rgba(37, 54, 70, 0.75);
-  font-family: Revalia;
-  font-family: "Roboto Mono";
-  font-family: "Courier Prime";
-  font-family: "Graduate";
   font-family: "Krona One";
+  font-size: 1.25rem;
 }
 
 .headers {
@@ -191,8 +192,7 @@ main::after {
   top: 2.5rem;
   left: 0.4rem;
   padding: 0.5rem;
-  font-family: Inconsolata;
-  font-family: "Saira Stencil One";
+  font-family: "Krona One";
   font-size: 1.25rem;
   background: var(--main-background);
   border: 2px solid #755200;
@@ -201,7 +201,6 @@ main::after {
 }
 
 #contact-button:hover {
-  background-color: #831D01;
   background-color: #755200;
   color: var(--main-background);
 }
