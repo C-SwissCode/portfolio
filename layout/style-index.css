@@ -28,9 +28,9 @@ body {
 
 header {
   background-color: rgb(58, 66, 66);
-  background-color: rgb(41, 46, 46);
-  background-color: rgb(126, 136, 136);
-  background-color: rgb(27, 31, 31);
+  /* background-color: rgb(41, 46, 46); */
+  /* background-color: rgb(126, 136, 136); */
+  /* background-color: rgb(27, 31, 31); */
   background-color: rgb(62, 71, 73);
 }
 
@@ -84,7 +84,7 @@ header {
 }
 
 #home-link {
-  transition: ease-in 250ms;
+  transition: ease-in 185ms;
 }
 
 #home-link:hover {
@@ -92,6 +92,7 @@ header {
 }
 
 #home-link::after {
+  font-family: "Bungee Inline";
   font-size: 1rem;
   text-transform: uppercase;
   position: absolute;
@@ -100,12 +101,12 @@ header {
   left: 0;
   right: 0;
   height: 2rem;
-  padding-top: 0.35rem;
+  padding-top: 0.3rem;
   background-color: rgb(41, 46, 46);
   content: "home";
   color: rgba(9, 186, 240, 1);
   opacity: 0;
-  transition: ease-in 250ms;
+  transition: ease-in 155ms;
 }
 
 #home-link:hover::after {
@@ -142,7 +143,7 @@ main::after {
   background-repeat: no-repeat;
   background-size: 30%;
   background-position: 65% 25%;
-  opacity: 0.4;
+  opacity: 0.45;
   z-index: -1;
 }
 
@@ -194,13 +195,7 @@ main::after {
   font-family: "Saira Stencil One";
   font-size: 1.25rem;
   background: var(--main-background);
-  border: 2px solid rgb(5, 169, 219);
-  border: 2px solid rgb(6, 101, 129);
-  border: 2px solid #831D01;
   border: 2px solid #755200;
-  color: rgb(5, 169, 219);
-  color: rgb(6, 101, 129);
-  color: #831D01;
   color: #755200;
   cursor: pointer;
 }
